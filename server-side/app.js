@@ -17,8 +17,8 @@ const app = express();
 app.use(express.json());
 app.use(
   cors({
-    origin: "https://code-veritus505.vercel.app/", // Allow requests from this origin
-    credentials: true, // Allow cookies and credentials
+    origin: "*",
+    credentials: true,
   })
 );
 
